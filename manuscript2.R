@@ -14,11 +14,9 @@ knitr::opts_chunk$set(dpi = 300, echo = FALSE, warning = FALSE, message = FALSE)
 options(digits = 4)
 
 load("../data/intubatecovid_submission.RData")
-#load("../data/intubatecovid.RData")
 
 # Set the date of the latest data
-datestamp <- file.info("../data/intubatecovid_20201024.RData")$mtime %>% date
-#datestamp <- dmy("13/10/2020")
+datestamp <- dmy("24/10/2020")
 
 # Select the cases that fall under the dates
 intubation <- intubation %>%
